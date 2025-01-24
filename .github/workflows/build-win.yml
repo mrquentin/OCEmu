@@ -27,7 +27,7 @@ jobs:
       run: TMOUT=1 script -q -e -c "bash ./msys2_setup_ocemu.sh"
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: OCEmu
         path: src
